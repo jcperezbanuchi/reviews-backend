@@ -26,6 +26,12 @@
       "required": true,
       "min": 1,
       "max": 10
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "reviews"
     }
   }
 }
